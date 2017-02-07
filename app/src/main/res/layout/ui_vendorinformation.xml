@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/vendor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Vendor_Name"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/vendor_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vendor_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:autoLink="phone"
+        android:text="vendor_phone" />
+
+    <TextView
+        android:id="@+id/vendor_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vendor_phone"
+        android:layout_centerHorizontal="true"        
+        android:layout_marginTop="16dp"
+        android:autoLink="map"
+        android:text="vendor_address"
+        android:textIsSelectable="true" />
+
+    <View
+        android:id="@+id/horizontol_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"  
+        android:background="#FF808080"
+        android:layout_marginLeft="8dip"  
+        android:layout_marginRight="8dip"
+        android:layout_below="@+id/vendor_address"
+        android:layout_marginTop="8dp" />  
+            
+    <TextView
+        android:id="@+id/vendor_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dip"  
+        android:layout_marginRight="16dip"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/horizontol_line"
+        android:layout_marginTop="8dp"
+        android:text="vendor_detail" />
+
+</RelativeLayout>
