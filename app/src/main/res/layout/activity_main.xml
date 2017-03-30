@@ -19,9 +19,8 @@
         android:id="@+id/spinner_condition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/spinner_category"
-        android:layout_alignRight="@+id/text_query"
-        android:layout_alignEnd="@+id/text_query" />
+        android:layout_toRightOf="@+id/spinner_category"
+        android:layout_alignTop="@+id/spinner_category" />
 
     <ListView
         android:id="@+id/listView"
