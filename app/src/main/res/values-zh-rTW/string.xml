@@ -6,10 +6,13 @@
     <string name="check_infomation">確認</string>
     
     <string name="query_result">查詢結果: </string>
+
+    <string name="query">查詢</string>
+    <string name="reset">重設</string>
     
     <string name="authors">Maurice Chiu</string>
     <string name="company">Copyright&#169; Novatek Microelectronics Corp. iVIEW/CIS, Ltd. All Rights Reserved.</string>
-    <string name="version_date">v3.4, 20170427</string>
+    <string name="version_date">v3.5, 20170511</string>
     <string name="website">http://www.novatek.com.tw/</string>
     
 </resources>

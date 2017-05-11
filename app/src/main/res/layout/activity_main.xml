@@ -13,14 +13,16 @@
         android:id="@+id/spinner_category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="8dp"
+        android:spinnerMode="dialog" />
 
     <Spinner
         android:id="@+id/spinner_condition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/spinner_category"
         android:layout_toRightOf="@+id/spinner_category"
-        android:layout_alignTop="@+id/spinner_category" />
+        android:spinnerMode="dialog" />
 
     <ListView
         android:id="@+id/listView"
@@ -54,16 +56,17 @@
         android:id="@+id/button_query"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="查詢"
+        android:text="@string/query"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
-        android:elevation="0dp" />
+        android:elevation="0dp"
+        tools:ignore="RelativeOverlap" />
 
     <Button
         android:id="@+id/button_reset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="重置"
+        android:text="@string/reset"
         android:layout_below="@+id/button_query"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
