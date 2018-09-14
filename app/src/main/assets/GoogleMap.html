@@ -1,0 +1,54 @@
+<html>
+<head>
+    <script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
+    <script type="text/javascript">
+        var geocoder;
+        var map;
+
+        function initialize() {
+            var latitude = 0;
+            var longitude = 0;
+            if (window.android) {
+                latitude = window.android.getLatitude();
+                longitude = window.android.getLongitude();
+            }
+
+            var mapOptions = {
+                center: new google.maps.LatLng(latitude, longitude), //地圖中心點
+                zoom: 15, //縮放的倍數
+                mapTypeId: google.maps.MapTypeId.ROADMAP  //道路型態地圖
+            };
+            map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);  //建立map的物件實體
+
+            var marker = new google.maps.Marker({
+                position: mapOptions.center,
+                map: map,
+            });
+        }
+
+        function goto(address){
+            geocoder.geocode({'address': address },function(results, status){
+                if(status == google.maps.GeocoderStatus.OK){
+                    map.setCenter(results[0].geometry.location);
+                    var marker = new google.maps.Marker({
+                        map: map,
+                        position: results[0].geometry.location
+                    });
+                }
+                else {
+                    map.setCenter(new google.maps.LatLng(25.033671, 121.564427));
+                    var marker = new google.maps.Marker({
+                        map: map,
+                        position: results[0].geometry.location
+                    });
+                }
+            });
+        }
+
+    </script>
+
+</head>
+<body onload="initialize()" style="margin: 0px; padding: 0px;">
+<div id="map_canvas" style="height: 100%; width: 100%;"></div>
+</body>
+</html>

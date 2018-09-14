@@ -17,7 +17,7 @@ public class DatabaseHelper  extends SQLiteOpenHelper {
 	
 	private static DatabaseHelper mInstance = null;
     // Update Database Version number before release APK
-    private static final int DATABASE_VERSION = 5;
+    private static final int DATABASE_VERSION = 6;
     private static final String SP_KEY_DB_VER = "db_ver";
     private final Context mContext;
  

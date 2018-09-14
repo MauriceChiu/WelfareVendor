@@ -12,6 +12,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
+import android.webkit.WebView;
 import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;
 import android.widget.AdapterView;
@@ -57,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
         dbManager = new DatabaseManager(this);
         VendorInformation = new VendorInformationUI(this);
+
         QueryItem = "特約商店名稱";
         QueryItemIndex = 1;
         QueryText = "";

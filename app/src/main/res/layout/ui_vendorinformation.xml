@@ -36,7 +36,7 @@
         android:textIsSelectable="true" />
 
     <View
-        android:id="@+id/horizontol_line"
+        android:id="@+id/horizontal_line"
         android:layout_width="match_parent"
         android:layout_height="1dip"  
         android:background="#FF808080"
@@ -52,8 +52,15 @@
         android:layout_marginLeft="16dip"  
         android:layout_marginRight="16dip"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/horizontol_line"
+        android:layout_below="@+id/horizontal_line"
         android:layout_marginTop="8dp"
         android:text="vendor_detail" />
+
+    <WebView
+        android:id="@+id/vendor_map"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
