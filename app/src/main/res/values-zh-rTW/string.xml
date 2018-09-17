@@ -6,13 +6,14 @@
     <string name="check_infomation">確認</string>
     
     <string name="query_result">查詢結果：</string>
+    <string name="no_internet">由於沒有網路連線，地圖無法載入。</string>
 
     <string name="query">查詢</string>
     <string name="reset">重設</string>
     
     <string name="authors">Maurice Chiu</string>
     <string name="company">Copyright&#169; Novatek Microelectronics Corp. iVIEW/CIS, Ltd. All Rights Reserved.</string>
-    <string name="version_date">v3.7, 20180914</string>
+    <string name="version_date">v3.8, 20180917</string>
     <string name="website">http://www.novatek.com.tw/</string>
     
 </resources>
