@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
@@ -53,27 +54,20 @@
         android:layout_marginRight="16dip"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/horizontal_line"
-        android:layout_above="@+id/center_line"
         android:layout_marginTop="8dp"
         android:scrollbars="vertical"
         android:text="vendor_detail" />
 
-    <View
-        android:id="@+id/center_line"
-        android:layout_width="match_parent"
-        android:layout_height="1dip"
-        android:background="#FFEEEEEE"
-        android:layout_marginLeft="0dip"
-        android:layout_marginRight="0dip"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="8dp" />
-
-    <WebView
+    <ImageView
         android:id="@+id/vendor_map"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/center_line" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dip"
+        android:layout_marginBottom="16dip"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/maps" />
 
 </RelativeLayout>
